@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e5e5e5;
+  font-family: "Times New Roman", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  font-weight: 700;
+}
+
+p {
+  text-indent: 20px;
+}
+
+
+@page {
+  size: A4;
+  margin: 20mm;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  padding: 20mm;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+
+h3 {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  font-weight: 700;
+}
+
+.content-title,
+.author {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer-text {
+  font-size: 16px;
+}
+
+ol li {
+  margin-left: 10px;
+}
+
+ol li::marker {
+  font-weight: 700;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px dashed #000;
+  padding: 6px 8px;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+.signatures {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.page-with-signatures{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+@media print {
+  body {
+    background: #ffffff;
+    padding: 0;
+  }
+
+  .page {
+    margin: 0;
+    box-shadow: none;
+  }
+}
